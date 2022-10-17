@@ -2,7 +2,7 @@
     <h2> Show Product</h2>
     <p type="Name:"> {{ $product->name }}</p>
     <p type="Details:"> {{ $product->desc }}</p>
-    <p type="Price:"> {{ $product->price }}</p>
+    <p type="Price:"> {{ $product->price }} $</p>
     <p><img src="{{ url('public/Image/'.$product->img) }}" style="height: 100px;width: 55%;" alt="">
     <p><a href="{{ route('product.index') }}"> <button type="submit" class="btn btn-primary ml-3">Back</button></a> </p>
 </div>

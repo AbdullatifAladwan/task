@@ -32,7 +32,7 @@ $(function() {
 $(".deleteProduct").click(function(){
   var id = $(this).data("id")
   var token = $(this).data("token");
-  confirm("Are You sure want to delete !");
+  alert("Product are deleted ");
  
   $.ajax(
   {
