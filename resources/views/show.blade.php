@@ -1,19 +1,19 @@
-<div class="tt">
- <h2> Show Product</h2>
- <p type="Name:">   {{ $product->name }}</p>      
- <p type="Details:"> {{ $product->desc }}</p> 
- <p type="Price:"> {{ $product->price }}</p> 
- <p><img src="{{ url('public/Image/'.$product->img) }}" style="height: 100px;width: 55%;" alt="">
- <p><a href="{{ route('product.index') }}">  <button type="submit" class="btn btn-primary ml-3">Back</button></a> </p>
-     
-   
-    <style>
+<div class="show">
+    <h2> Show Product</h2>
+    <p type="Name:"> {{ $product->name }}</p>
+    <p type="Details:"> {{ $product->desc }}</p>
+    <p type="Price:"> {{ $product->price }}</p>
+    <p><img src="{{ url('public/Image/'.$product->img) }}" style="height: 100px;width: 55%;" alt="">
+    <p><a href="{{ route('product.index') }}"> <button type="submit" class="btn btn-primary ml-3">Back</button></a> </p>
+</div>
+
+<style>
     body {
         background: #59ABE3;
         margin: 0
     }
 
-    .tt {
+    .show {
         width: 340px;
         height: 500px;
         background: #e6e6e6;
@@ -48,7 +48,7 @@
         border-bottom: 2px solid #bebed2
     }
 
-    
+
 
     p:before {
         content: attr(type);
@@ -92,7 +92,8 @@
     span {
         margin: 0 5px 0 15px
     }
+
     p {
-    color: black;
-}
+        color: black;
+    }
 </style>
