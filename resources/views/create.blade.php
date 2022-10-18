@@ -5,7 +5,7 @@
     <p type="Details:"><input type="text" name="desc" class="form-control" placeholder="Desc"></p>
     <p type="Price:"> <input type="number" name="price" class="form-control" placeholder="Price "></input></p>
    
-       <p> <label for="files" >Select Image</label>
+       <p> <label for="files" title="Click Me" >Select Image</label>
 
         <input id="files" style="visibility:hidden;" type="file" name="img" class="btn"></p>
   

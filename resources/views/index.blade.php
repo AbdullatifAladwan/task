@@ -24,6 +24,7 @@
                     <a href="{{ route('product.show',$pro->id ) }}"> <img src="{{ url('public/Image/'.$pro->img) }}" alt="Image" style="height: 100px;width: 50%;" class="img-fluid"></a>
                     <h3><a href="{{ route('product.show',$pro->id ) }}">{{ $pro->name }}</a></h3>
                     <p>{{ $pro->desc }}</p>
+                    <p>{{ $pro->price }}$</p>
                     <div class="text-center"><a class="btn btn-primary" href="{{ route('product.edit',$pro->id ) }}">Edit</a></div>
 
                 </div>

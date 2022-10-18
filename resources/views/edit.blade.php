@@ -6,7 +6,7 @@
     <p type="Details:"> <input type="text" name="desc" value="{{ $product->desc }}" class="form-control" placeholder="Details"></p>
     <p type="Price:"> <input type="number" name="price" class="form-control" placeholder="price" value="{{ $product->price }}"></p>
     <p><img src="{{ url('public/Image/'.$product->img) }}" style="height: 100px;width: 20%;" alt="">
-        <label for="files" >Select Image</label>
+        <label for="files"title="Click Me"  >Select Image</label>
 
         <input id="files" style="visibility:hidden;" type="file" name="img" class="btn"></p>
   
