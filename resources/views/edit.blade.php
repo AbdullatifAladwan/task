@@ -2,13 +2,13 @@
     @csrf
     @method('PUT')
     <h2>Edit product</h2>
-    <p type="Name:"> <input type="text" name="name" value="{{ $product->name }}" class="form-control" placeholder="Name"></p>
-    <p type="Details:"> <input type="text" name="desc" value="{{ $product->desc }}" class="form-control" placeholder="Details"></p>
-    <p type="Price:"> <input type="number" name="price" class="form-control" placeholder="price" value="{{ $product->price }}"></p>
+    <p type="Name:"> <input type="text" name="name" value="{{ $product->name }}" class="form-control" placeholder="Name" required></p>
+    <p type="Details:"> <input type="text" name="desc" value="{{ $product->desc }}" class="form-control" placeholder="Details" required></p>
+    <p type="Price:"> <input type="number" name="price" class="form-control" placeholder="price" value="{{ $product->price }}" required></p>
     <p><img src="{{ url('public/Image/'.$product->img) }}" style="height: 100px;width: 20%;" alt="">
         <label for="files"title="Click Me"  >Select Image</label>
 
-        <input id="files" style="visibility:hidden;" type="file" name="img" class="btn"></p>
+        <input id="files" style="visibility:hidden;" type="file" name="img" class="btn" ></p>
   
     <button type="submit" class="btn btn-primary ml-3">Submit</button>
 

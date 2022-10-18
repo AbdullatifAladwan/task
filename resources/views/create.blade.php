@@ -1,13 +1,13 @@
 <form action="{{ route('product.store') }}" method="POST" enctype="multipart/form-data" class="form">
     @csrf
     <h2>Add product</h2>
-    <p type="Name:"> <input type="text" name="name" class="form-control" placeholder="Name"></p>
-    <p type="Details:"><input type="text" name="desc" class="form-control" placeholder="Desc"></p>
-    <p type="Price:"> <input type="number" name="price" class="form-control" placeholder="Price "></input></p>
+    <p type="Name:"> <input type="text" name="name" class="form-control" placeholder="Name" required></p>
+    <p type="Details:"><input type="text" name="desc" class="form-control" placeholder="Desc" required></p>
+    <p type="Price:"> <input type="number" name="price" class="form-control" placeholder="Price " required></input></p>
    
        <p> <label for="files" title="Click Me" >Select Image</label>
 
-        <input id="files" style="visibility:hidden;" type="file" name="img" class="btn"></p>
+        <input id="files" style="visibility:hidden;" type="file" name="img" class="btn" ></p>
   
     <button type="submit" class="btn btn-primary ml-3">Submit</button>
 
