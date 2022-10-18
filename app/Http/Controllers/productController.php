@@ -33,7 +33,7 @@ class productController extends Controller
             'img' => 'required',
         ]);
 
-
+        //function to save img and move path 'public/Image' 
         if ($request->file('img')) {
             $file = $request->file('img');
             $filename = date('YmdHi') . $file->getClientOriginalName();
@@ -46,7 +46,7 @@ class productController extends Controller
         $data->save();
 
 
-        return redirect()->route('product.index')->with('success', 'product has been created successfully.');
+        return redirect()->route('product.index');
     }
 
 
@@ -80,11 +80,8 @@ class productController extends Controller
         } else {
             unset($input['img']);
         }
-
         $product->update($input);
-
-
-        return redirect()->route('product.index')->with('success', 'product Has Been updated successfully');
+        return redirect()->route('product.index');
     }
 
 
